@@ -13,15 +13,15 @@ export default function Home() {
       </main>
       <div className=" mt-[-20vh] grid grid-cols-3 min-h-screen p-8 gap-[1vw] sm:p-20 font-[family-name:var(--font-geist-sans)] position-absolute items-center justify-items-center">
         
-        <div className="animate-all animate-(--animate-slide1)">
+        <div className="animate-all animate-(--animate-slide2)">
             <List2/>
         </div>
 
-        <div className=" animate-all md:animate-(--animate-slide2)">
+        <div className=" animate-all md:animate-(--animate-slide1)">
             <List1/>
         </div>
         
-        <div className=" animate-all md:animate-(--animate-slide3)">
+        <div className=" animate-all md:animate-(--animate-slide2)">
             <List3/>
         </div>
 

@@ -14,13 +14,13 @@ export default function list3() {
 
   const handleAdd = () => {
     if (input.trim() !== '') {
-      setItems([...items, input]);
+      setItems([input,...items]);
       setInput('');
     }
   };
 
   return (
-    <div className=" min-h-[50vh] w-[25vw] mx-auto p-10 bg-green-200 rounded-xl shadow transition-all duration-300 ease-in-out hover:scale-105">
+    <div className=" h-[50vh] w-[25vw] mx-auto p-10 bg-green-200 rounded-xl shadow transition-all duration-300 ease-in-out hover:scale-105 overflow-y-scroll no-scrollbar">
       <h1 className="text-2xl text-black mb-4">To Do in Your Free Time</h1>
       
       <div className="p-4 bg-green-300 rounded mb-4 flex items-center w-auto justify-between hover:scale-105 transition-all duration-300 ease-in-out">
@@ -40,9 +40,9 @@ export default function list3() {
           </button>
         </div>
       </div>
-
+      
       {items.length === 0 ? (
-        <p className="text-black text-[3vh]">Finished! You did it!</p>
+        <p className="text-black text-[2vh] text-center justify-center">Finished! You did it!</p>
       ) : (
         <ul className="space-y-2">
           {items.map((item, index) => (
