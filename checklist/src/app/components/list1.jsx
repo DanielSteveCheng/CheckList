@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function list1() {
-  const [items, setItems] = useState(['Do the Dishes', 'Violin', 'Post SteelHacks Post']);
+  const [items, setItems] = useState(['Do the Dishes', 'Violin']);
   const [input, setInput] = useState('');
 
   const handleDelete = (indexToDelete) => {
