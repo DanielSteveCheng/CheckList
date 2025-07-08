@@ -25,7 +25,7 @@ export default function list3() {
       
       <div className="p-4 bg-green-300 rounded mb-4 flex items-center w-auto justify-between hover:scale-105 transition-all duration-300 ease-in-out">
         <div>
-          <form
+          <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
