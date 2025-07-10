@@ -5,7 +5,7 @@
 import { useState } from 'react';
 
 export default function list2() {
-  const [items, setItems] = useState(['Laundry','Meeting with HopHacks, Wed 6pm','Meeting with CMU, Thurs 6pm','Grocery Shopping']);
+  const [items, setItems] = useState(['Laundry','Meeting with CMU, Thurs 6pm','Grocery Shopping']);
   const [input, setInput] = useState('');
 
   const handleDelete = (indexToDelete) => {
